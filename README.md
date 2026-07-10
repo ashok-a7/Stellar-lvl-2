@@ -3,12 +3,6 @@
 
 A decentralized and permissionless To-Do List application built using Soroban smart contracts on the Stellar blockchain.
 This project enables users to create, manage, and track tasks securely without relying on any central authority, ensuring transparency, immutability, and ownership of data.
-
-## 📌 Add screenshots of your app here
-(UI, task creation, blockchain interaction, etc.)
-
-<img width="1278" height="697" alt="image" src="https://github.com/user-attachments/assets/a989940a-2bf0-48e0-8c77-a28d9156b047" />
-
 ## 📜 Smart Contract Address
 CDJVMAX34YRCQ5JFC6SIOQOVSUY6XWEFYJOLF3SBCKU7CMI3IAP6HPWN
 
@@ -16,14 +10,25 @@ https://lab.stellar.org/smart-contracts/contract-explorer?$=network$id=testnet&l
 
 <img width="1913" height="881" alt="image" src="https://github.com/user-attachments/assets/161d91ff-7157-469a-aa75-10ad406c5d2b" />
 
+## 📌 Add screenshots of your app here
+(UI, task creation, blockchain interaction, etc.)
+
+<img width="1278" height="697" alt="image" src="https://github.com/user-attachments/assets/a989940a-2bf0-48e0-8c77-a28d9156b047" />
+
 ## ✨ Features
 
 📝 Create Tasks – Add new tasks directly on-chain
+
 ✅ Mark as Complete – Update task status securely
+
 ❌ Delete Tasks – Remove tasks permanently
+
 🔐 Decentralized Ownership – Each user controls their own data
+
 🌐 Permissionless Access – No login or central server required
+
 ⚡ Fast & Low Cost – Powered by Stellar’s efficient network
+
 ## 🧠 How It Works
 
 The application uses Soroban smart contracts to store and manage tasks on the blockchain.
@@ -60,19 +65,6 @@ stellar contract deploy \
   --source-account YOUR_ACCOUNT \
   --network testnet \
   --alias todo_contract
-📸 Demo / Screenshots
-
-## 📌 Add screenshots of your app here
-(UI, task creation, blockchain interaction, etc.)
-
-<img width="1278" height="697" alt="image" src="https://github.com/user-attachments/assets/a989940a-2bf0-48e0-8c77-a28d9156b047" />
-
-## 📜 Smart Contract Address
-CDJVMAX34YRCQ5JFC6SIOQOVSUY6XWEFYJOLF3SBCKU7CMI3IAP6HPWN
-
-https://lab.stellar.org/smart-contracts/contract-explorer?$=network$id=testnet&label=Testnet&horizonUrl=https:////horizon-testnet.stellar.org&rpcUrl=https:////soroban-testnet.stellar.org&passphrase=Test%20SDF%20Network%20/;%20September%202015;&smartContracts$explorer$contractId=CDJVMAX34YRCQ5JFC6SIOQOVSUY6XWEFYJOLF3SBCKU7CMI3IAP6HPWN
-
-<img width="1913" height="881" alt="image" src="https://github.com/user-attachments/assets/161d91ff-7157-469a-aa75-10ad406c5d2b" />
 
 🚧 Future Improvements
 
