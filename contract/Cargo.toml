@@ -1,23 +1,41 @@
+# ============================================================
+# TrustWork — Stellar Soroban Smart Contracts Workspace
+# Optimized configuration for production WebAssembly builds
+# ============================================================
+
 [workspace]
 resolver = "2"
+
 members = [
-  "contracts/*",
+    "contracts/*",
 ]
 
+# ------------------------------------------------------------
+# Shared Workspace Dependencies
+# ------------------------------------------------------------
 [workspace.dependencies]
 soroban-sdk = "25"
 
-[profile.release]
-opt-level = "z"
-overflow-checks = true
-debug = 0
-strip = "symbols"
-debug-assertions = false
-panic = "abort"
-codegen-units = 1
-lto = true
 
-# For more information about this profile see https://soroban.stellar.org/docs/basic-tutorials/logging#cargotoml-profile
+# ------------------------------------------------------------
+# Production Release Profile
+# Optimized for Soroban WASM smart contract deployment
+# ------------------------------------------------------------
+[profile.release]
+opt-level = "z"              # Optimize for smallest binary size
+overflow-checks = true       # Enable integer overflow protection
+debug = 0                    # Remove debug information
+strip = "symbols"            # Strip symbols to reduce WASM size
+debug-assertions = false     # Disable debug assertions
+panic = "abort"              # Reduce panic handling overhead
+codegen-units = 1            # Better optimization
+lto = true                   # Enable Link Time Optimization
+
+
+# ------------------------------------------------------------
+# Release Profile with Logs
+# Used for debugging and development builds
+# ------------------------------------------------------------
 [profile.release-with-logs]
 inherits = "release"
 debug-assertions = true
